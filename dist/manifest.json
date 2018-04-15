@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
 
-  "name": "Chrome Extension TypeScript Starter",
-  "description": "Chrome Extension, TypeScript, Visual Studio Code",
-  "version": "1.0",
+  "name": "Jira Tempo Helper",
+  "description": "Suggests Tickets to tempo",
+  "version": "0.0.1",
 
   "options_ui": {
     "page": "options.html",
@@ -17,7 +17,7 @@
 
   "content_scripts": [
       {
-          "matches": ["<all_urls>"],
+          "matches": ["https://*/secure/TempoUserView.jspa"],
           "js": ["js/vendor.js", "js/content_script.js"]
       }
   ],
@@ -28,6 +28,7 @@
 
   "permissions": [
     "storage",
-    "<all_urls>"
+    "activeTab",
+    "*://*/rest/api/2/search"
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "name": "chrome-extension-typescript-starter",
-  "version": "1.0.0",
-  "description": "chrome-extension-typescript-starter",
+  "name": "jira-tempo-helper",
+  "version": "0.0.1",
+  "description": "jira-tempo-helper",
   "main": "index.js",
   "scripts": {
     "watch": "webpack --config webpack/webpack.dev.js --watch",
@@ -11,18 +11,44 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chibat/chrome-extension-typescript-starter.git"
+    "url": "https://github.com/ki4kis/jira-tempo-helper.git"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.0.0",
+    "interact.js": "^1.2.8",
     "jquery": "~3.3.1",
-    "moment": "~2.22.0"
+    "moment": "~2.22.0",
+    "moment-range": "^4.0.0",
+    "rc-slider": "^8.6.1",
+    "react": "^16.3.1",
+    "react-calendar-timeline": "^0.15.10",
+    "react-d3-basic": "^1.6.11",
+    "react-dock": "^0.2.4",
+    "react-dom": "^16.3.1",
+    "react-router-dom": "^4.2.2",
+    "reactstrap": "^5.0.0-beta.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0-beta.44",
+    "@babel/preset-env": "^7.0.0-beta.44",
+    "@types/bootstrap": "^4.0.0",
     "@types/chrome": "~0.0.63",
     "@types/jquery": "~3.3.1",
+    "@types/moment-range": "^3.1.0",
+    "@types/rc-slider": "^8.2.3",
+    "@types/react": "^16.3.10",
+    "@types/react-calendar-timeline": "^0.8.8",
+    "@types/react-dom": "^16.0.5",
+    "@types/react-router-dom": "^4.2.6",
+    "@types/reactstrap": "^5.0.21",
+    "babel-loader": "^8.0.0-beta.2",
+    "css-loader": "^0.28.11",
+    "style-loader": "^0.20.3",
     "ts-loader": "~4.2.0",
     "typescript": "~2.8.1",
     "webpack": "~4.5.0",
+    "webpack-chrome-extension-reloader": "^0.6.6",
     "webpack-cli": "~2.0.14",
     "webpack-merge": "~4.1.2"
   }
